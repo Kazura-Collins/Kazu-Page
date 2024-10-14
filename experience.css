@@ -1,0 +1,103 @@
+#experience {
+  background-color: #8B0000;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.experience-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/images/fondoExperience.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.experience-border {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.experience-border.top {
+  top: -1px;
+}
+
+.experience-border.bottom {
+  bottom: -1px;
+}
+
+.exp-container {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.experience-title {
+  font-size: 64px;
+  font-weight: 850;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.experience-subtitle {
+  font-size: 40px;
+  font-weight: 850;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transform: rotate(-8deg);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.education .experience-subtitle {
+  transform: rotate(9deg);
+}
+
+.experience-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #8B0000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+}
+
+.cv-button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}

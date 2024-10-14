@@ -1,0 +1,254 @@
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    z-index: 999;
+  }
+
+  nav.active {
+    max-height: calc(100vh - 50px);
+  }
+
+  nav ul {
+    padding: 20px 0;
+    margin: 10px;
+    opacity: 0;
+    flex-direction: column;
+    transition: opacity 0.3s ease-out;
+  }
+
+  nav.active ul {
+    opacity: 1;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 5px;
+  }
+
+  .main-container {
+    padding: 0 10px;
+    margin-top: 120px;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  #home .main-container-home {
+    padding: 0;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #about .main-container-about {
+    height: auto;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #about .rectangle,
+  #about .circles,
+  #about .stars {
+    display: none;
+  }
+
+  #about .background {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  #about .kazura-collins {
+    position: relative;
+    font-size: 8vw;
+    transform: none;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  #about .span-2024 {
+    position: relative;
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+
+  #about .span-isaac-montano {
+    position: relative;
+    font-size: 6vw;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  #about .span-info,
+  #about .span-multimedia-design {
+    position: relative;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  #about .software-designer {
+    position: relative;
+    width: 100%;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  #about .group-left {
+    position: relative;
+    width: 100%;
+  }
+
+  #about .languages,
+  #about .software,
+  #about .bilingual-common,
+  #about .adobe-expert,
+  #about .figma-expert,
+  #about .html-css-js-expert {
+    margin-left: 0;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  #about .bilingual-common {
+    font-size: 15px;
+  }
+
+  #experience {
+    padding: 30px 0;
+  }
+
+  .experience-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .experience-content {
+    flex-direction: column;
+  }
+
+  .experience-subtitle {
+    font-size: 28px;
+    transform: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .experience-box {
+    margin-bottom: 20px;
+  }
+
+  .experience-list li {
+    font-size: 16px;
+  }
+
+  .cv-button {
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+
+  #projects .project-content {
+    flex-direction: column;
+  }
+
+  #projects .project-image,
+  #projects .project-description {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 28px;
+  }
+
+  .experience-subtitle {
+    font-size: 24px;
+  }
+
+  .experience-list li {
+    font-size: 14px;
+  }
+
+  #about .kazura-collins {
+    font-size: 20px;
+  }
+
+  #about .span-isaac-montano {
+    font-size: 18px;
+  }
+
+  #about .span-info,
+  #about .span-multimedia-design,
+  #about .software-designer,
+  #about .languages,
+  #about .software,
+  #about .bilingual-common-languages,
+  #about .native-language,
+  #about .adobe-expert,
+  #about .figma-expert,
+  #about .html-css-js-expert {
+    font-size: 14px;
+  }
+
+}

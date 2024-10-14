@@ -1,0 +1,60 @@
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Ajustado para dar espacio al header fijo */
+}
+
+.main-container-home {
+    width: 100%;
+    max-width: 1200px; /* Ajusta este valor según tus preferencias */
+    padding: 0 20px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-image {
+    width: 100%;
+    max-width: 800px; /* Ajusta este valor según el tamaño máximo deseado */
+    height: auto;
+    object-fit: contain;
+}
+
+.author-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.author-name {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.author-subtitle {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .portfolio-image {
+        max-width: 90%; /* Ajusta el tamaño máximo en pantallas pequeñas */
+    }
+
+    .author-name {
+        font-size: 1.2rem;
+    }
+
+    .author-subtitle {
+        font-size: 1rem;
+    }
+}
+

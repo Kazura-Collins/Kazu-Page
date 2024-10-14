@@ -1,0 +1,62 @@
+#projects {
+    background-color: #000;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#projects h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #111;
+    padding: 20px;
+    border-left: 5px solid #8B0000;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #8B0000;
+}
+
+.project-content {
+    display: flex;
+    gap: 20px;
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 2;
+}
+
+.behance-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8B0000;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.behance-link:hover {
+    background-color: #6B0000;
+}

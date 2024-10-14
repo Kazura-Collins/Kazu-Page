@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazura Collins Portfolio</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo"><img src="assets/images/kazulogo.png" alt="KAZURA"></div>
+        <div class="menu-toggle">☰</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="home-section">
+        <div class="main-container-home">
+          <img src="assets/images/portfolio.png" alt="Portfolio" class="portfolio-image">
+          <div class="author-info">
+            <h2 class="author-name">KAZURA COLLINS</h2>
+            <p class="author-subtitle">ISAAC MONTAÑO</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="main-container-about">
+          <div class="rectangle"><div class="mask-group"></div></div>
+          <div class="background">
+            <span class="kazura-collins">Kazura Collins</span>
+            <div class="circles"></div>
+            <span class="span-2024">2024</span>
+            <span class="span-isaac-montano">Who's Isaac Montaño?</span>
+            <span class="span-info">08/08/2003 · Colombian<br /></span>
+            <span class="span-multimedia-design">MULTIMEDIA DESIGNER · UX DESIGNER · VIDEO EDITOR</span>
+            <span class="software-designer">
+              I'm a software designer and developer focused on interactive applications. <br /><br />
+              I specialize in innovative technological solutions that enhance the user experience, balancing functionality
+              and aesthetics. I also manage projects with efficiency and attention to detail, adapting quickly to new tools.
+            </span>
+            <div class="group-left">
+              <span class="languages">LANGUAGES</span>
+              <div class="bilingual-common">
+                <span class="bilingual-common-languages">Bilingual / Common Languages:<br /></span>
+                <span class="native-language">(C2) Spanish - Native Language<br />(C1) English - Acquired Language</span>
+              </div>
+              <span class="software">SOFTWARE</span>
+              <span class="adobe-expert">Adobe Suite ................... Expert</span>
+              <span class="figma-expert">Figma ............................... Expert</span>
+              <span class="html-css-js-expert">HTML - CSS - JS ............ Expert</span>
+            </div>
+          </div>
+          <div class="stars"></div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience">
+        <div class="experience-background"></div>
+        <img src="assets/images/up.png" alt="Borde superior" class="experience-border top">
+        <div class="exp-container main-container">
+          <h2 class="experience-title">Experience</h2>
+          <div class="experience-content">
+            <div class="professional-experience">
+              <h3 class="experience-subtitle">Professional Experience</h3>
+              <ul class="experience-list">
+                <li>2020 - Present: Freelance Multimedia and Web Designer</li>
+                <li>2023: UX/UI Designer for Gases de Occidente, Cloudtrack</li>
+                <li>2023 - 2024: Brandmaking and Web Designer for Asocrea</li>
+              </ul>
+            </div>
+            <div class="education">
+              <h3 class="experience-subtitle">Education</h3>
+              <ul class="experience-list">
+                <li>2020 - 2025: Interactive Media Design, Universidad ICESI, Cali, Colombia</li>
+                <li>2007 - 2019: Bachelor at Colegio Andino, Cali, Colombia</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="cv-button">Check my CV</a>
+        </div>
+        <img src="assets/images/down.png" alt="Borde inferior" class="experience-border bottom">
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <h2>PROJECTS</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>CloudTrack-GDO</h3>
+            <div class="project-content">
+              <div class="project-image">
+                <img src="assets/images/cloudtrack.png" alt="CloudTrack-GDO">
+              </div>
+              <div class="project-description">
+                <p>CloudTrack-GDO es una plataforma de gestión de flotas diseñada para Gases de Occidente. Este proyecto se enfoca en mejorar la eficiencia y seguridad de las operaciones de la flota de vehículos de la empresa.</p>
+                <a href="https://www.behance.net/gallery/200259979/CloudTrack-GDO" class="behance-link" target="_blank">Check it on Behance</a>
+              </div>
+            </div>
+          </div>
+          <!-- Puedes añadir más proyectos aquí siguiendo la misma estructura -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contacto</h2>
+          <p>Envíame un email: <a href="mailto:kazura.icesi@gmail.com">kazura.icesi@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Kazura Collins. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            nav.classList.remove('active');
+          });
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+          const isClickInsideNav = nav.contains(event.target);
+          const isClickOnMenuToggle = menuToggle.contains(event.target);
+          
+          if (!isClickInsideNav && !isClickOnMenuToggle && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
