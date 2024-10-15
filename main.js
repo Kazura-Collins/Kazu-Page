@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       { 
         id: 'RitualOfMadness',
-        image: 'assets/images/RitualOfMadness.gif', 
+        image: 'assets/images/RitualofMadness.gif', 
         behanceUrl: 'https://www.behance.net/gallery/193558463/Ritual-of-madness-Card-Game'
       },
       { 
