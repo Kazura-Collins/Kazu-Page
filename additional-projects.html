@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Projects - Kazura Collins Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/apple-icon.png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="additional-projects.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header (similar al de index.html) -->
+    <header class="header">
+        <div class="header-content">
+          <div class="logo"><img src="assets/images/kazulogo.png" alt="KAZURA"></div>
+          <div class="menu-toggle">☰</div>
+          <nav>
+            <ul>
+              <li><a href="index.html" data-i18n="home">Home</a></li>
+              <li><a href="#about" data-i18n="about">About</a></li>
+              <li><a href="#experience" data-i18n="experience">Experience</a></li>
+              <li><a href="#projects" data-i18n="projects1">Projects</a></li>
+              <li><a href="additional-projects.html" data-i18n="additionalProjects">Additional Projects</a></li>
+              <li><a href="#contact" data-i18n="contact">Contact me</a></li>
+              <li class="language-selector">
+                <select id="languageSelector">
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="additional-projects" class="additional-projects-section">
+            <div class="main-container">
+                <h1 data-i18n="additionalProjects">Additional Projects</h1>
+                
+                <!-- Carrusel de Modelos 3D -->
+                <div class="carousel-container">
+                    <h2 data-i18n="3dModels">3D Models</h2>
+                    <div class="carousel" id="3d-models-carousel">
+                        <!-- Las imágenes y GIFs se añadirán dinámicamente con JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Carrusel de Otros Proyectos -->
+                <div class="carousel-container">
+                    <h2 data-i18n="otherProjects">Other Projects</h2>
+                    <div class="carousel" id="other-projects-carousel">
+                        <!-- El contenido variado se añadirá dinámicamente con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección para los prototipos de Figma -->
+        <section id="figma-prototypes" class="figma-prototypes-section">
+            <div class="main-container">
+                <h2 data-i18n="figmaPrototypes">Figma Prototypes</h2>
+                
+                <div class="prototype-row">
+                    <div class="prototype-item vertical">
+                        <h3 data-i18n="prototype3">RidePal</h3>
+                        <div class="figma-container">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHVOdqbWDmeexpy3xCbM166%2FArquitectura-Informaci%25C3%25B3n-segundo-proyecto%3Fpage-id%3D938%253A2223%26type%3Ddesign%26node-id%3D1220-3471%26viewport%3D7182%252C-13444%252C0.32%26scaling%3Dscale-down%26starting-point-node-id%3D1220%253A3471%26hide-ui%3D1" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups"></iframe>
+                        </div>
+                    </div>
+                    <div class="prototype-item horizontal">
+                        <h3 data-i18n="prototype4">Intu Redesign</h3>
+                        <div class="figma-container">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnpmhgSqkTBLdldjxuop6rV%2FHCI-Pro%3Fpage-id%3D315%253A285%26type%3Ddesign%26node-id%3D442-1313%26viewport%3D-741%252C753%252C0.08%26t%3DSVCMLvJBbqSLVKyD-1%26scaling%3Dscale-down%26starting-point-node-id%3D442%253A1313%26mode%3Ddesign%26hide-ui%3D1" allowfullscreen sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 Kazura Collins. <span data-i18n="copyright">All rights reserved.</span></p>
+    </footer>
+
+    <script src="additional-projects.js"></script>
+</body>
+</html>

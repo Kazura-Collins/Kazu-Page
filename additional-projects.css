@@ -1,0 +1,285 @@
+.additional-projects-section {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3.5vw;
+    font-weight: 850;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px; /* Espacio para los botones */
+}
+
+h2 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img,
+.carousel-item video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:first-of-type {
+    left: 10px;
+}
+
+button:last-of-type {
+    right: 10px;
+}
+
+.carousel-item:active {
+    cursor: grabbing;
+}
+
+.carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item.active video {
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    .carousel-item {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .carousel-item {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.figma-container {
+    width: 100%;
+    padding-top: 56.25%; /* Mantiene una relación de aspecto 16:9 */
+    position: relative;
+    background-color: #1a1a1a;
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+}
+
+.figma-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.figma-prototypes-section {
+    padding: 2rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.prototypes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 85%; /* Reduce el ancho total de la grilla */
+    max-width: 1000px; /* Reduce el ancho máximo */
+    margin: 0 auto;
+}
+
+.prototype-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.prototype-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.prototype-item h3 {
+    padding: 0.8rem;
+    margin: 0;
+    background-color: #831300;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.prototype-item.vertical {
+    flex: 1;
+}
+
+.prototype-item.horizontal {
+    flex: 2;
+}
+
+.prototype-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.prototype-item h3 {
+    padding: 1rem;
+    margin: 0;
+    background-color: #831300;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Estilos específicos para prototipos horizontales */
+.prototype-item.horizontal {
+    grid-column: span 2;
+}
+
+.prototype-item.horizontal .figma-container {
+    height: 600px;
+}
+
+/* Estilos específicos para prototipos verticales (móviles) */
+.prototype-item.vertical .figma-container {
+    padding-top: 18%; /* Ajusta esto para una relación de aspecto 9:16 */
+}
+
+/* Ajusta la altura del iframe para los prototipos verticales */
+.prototype-item.vertical .figma-container iframe {
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .prototypes-grid {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prototype-row {
+        flex-direction: column;
+    }
+
+    .prototype-item.vertical,
+    .prototype-item.horizontal {
+        width: 100%;
+    }
+
+    .figma-container,
+    .prototype-item.vertical .figma-container {
+        padding-top: 56.25%; /* Mantiene 16:9 en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .prototypes-grid {
+        width: 95%;
+    }
+
+    .figma-container {
+        padding-top: 75%; /* Cambia a una relación de aspecto 4:3 en pantallas muy pequeñas */
+    }
+
+    .prototype-item.vertical .figma-container {
+        padding-top: 75%; /* Cambia a una relación de aspecto 4:3 en pantallas muy pequeñas */
+    }
+}
+
+.carousel-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-button {
+    background-color: #831300; /* Color rojo rebelde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: #c12209; /* Un tono más claro al pasar el mouse */
+}
+
+.carousel-button.prev {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.carousel-button.next {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

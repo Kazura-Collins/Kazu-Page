@@ -4,6 +4,7 @@
     "about": "About",
     "experience": "Experience",
     "projects1": "Projects",
+    "additionalProjects": "Additional Projects",
     "contact": "Contact me",
     "authorSubtitle": "ISAAC MONTAÑO",
     "whoIsIsaac": "Who's Isaac Montaño?",
@@ -60,13 +61,22 @@
         "title": "Branding de Uruguay",
         "description": "El proyecto de Branding de Uruguay es una iniciativa integral de identidad nacional destinada a mostrar la cultura única, la belleza natural y las oportunidades económicas del país. Esta estrategia de marca abarca un lenguaje visual coherente, un marco de mensajes y materiales promocionales que resaltan las fortalezas de Uruguay en turismo, comercio e innovación. El resultado es una representación poderosa y auténtica de la esencia de Uruguay en el escenario global."
       }
-    }
+    },
+    "additionalProjects1": "Additional Projects",
+    "3dModels": "3D Models",
+    "otherProjects": "Other Projects",
+    "figmaPrototypes": "Figma Prototypes",
+    "prototype3": "RidePal",
+    "prototype4": "Intu Redesign",
+    "previous": "Previous",
+    "next": "Next"
   },
   "es": {
     "home": "Inicio",
     "about": "Sobre mí",
     "experience": "Experiencia",
     "projects1": "Proyectos",
+    "additionalProjects1": "Proyectos Adicionales",
     "contact": "Contáctame",
     "authorSubtitle": "ISAAC MONTAÑO",
     "whoIsIsaac": "¿Quién es Isaac Montaño?",
@@ -123,6 +133,14 @@
         "title": "Branding de Uruguay",
         "description": "El proyecto de Branding de Uruguay es una iniciativa integral de identidad nacional destinada a mostrar la cultura única, la belleza natural y las oportunidades económicas del país. Esta estrategia de marca abarca un lenguaje visual coherente, un marco de mensajes y materiales promocionales que resaltan las fortalezas de Uruguay en turismo, comercio e innovación. El resultado es una representación poderosa y auténtica de la esencia de Uruguay en el escenario global."
       }
-    }
+    },
+    "additionalProjects": "Proyectos Adicionales",
+    "3dModels": "Modelos 3D",
+    "otherProjects": "Otros Proyectos",
+    "figmaPrototypes": "Prototipos de Figma",
+    "prototype3": "RidePal",
+    "prototype4": "Rediseño de Intu",
+    "previous": "Anterior",
+    "next": "Siguiente"
   }
 }
