@@ -41,6 +41,8 @@
   color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .experience-title {
@@ -48,45 +50,46 @@
   font-weight: 850;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .experience-content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.professional-experience,
+.education {
+  width: 48%;
 }
 
 .experience-subtitle {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 850;
   text-transform: uppercase;
   margin-bottom: 20px;
-  transform: rotate(-8deg);
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-}
-
-.education .experience-subtitle {
-  transform: rotate(9deg);
-}
-
-.experience-box {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
 }
 
 .experience-list {
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 .experience-list li {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
 .cv-button {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
   background-color: #ffffff;
   color: #8B0000;
   padding: 10px 20px;

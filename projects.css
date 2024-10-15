@@ -60,3 +60,163 @@
 .behance-link:hover {
     background-color: #6B0000;
 }
+
+.projects-section {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: var(--default-font-family);
+    padding: 5% 0;
+}
+
+.main-container-projects {
+    position: relative;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column-afb {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    font-size: 3.5vw;
+    font-weight: 850;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.vector {
+    display: none; /* Ocultar el vector si no es necesario */
+}
+
+.project-title {
+    font-size: 2.2vw;
+    font-weight: 850;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.project-title:hover, .project-title.active {
+    color: #831300;
+}
+
+.flex-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: #831300;
+    margin-bottom: 3%;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-description {
+    font-size: 1vw;
+    line-height: 1.5;
+    margin-bottom: 3%;
+    min-height: 10vw; /* Asegura una altura mínima para la descripción */
+}
+
+.rectangle-5 {
+    width: 242px;
+    height: 76px;
+    margin: 0 auto;
+    background: url(./assets/images/e3b6fcb1-45af-4e39-91e2-811ebcfb82c7.png) no-repeat center;
+    background-size: cover;
+}
+
+.behance-button {
+    align-self: flex-end;
+    background-color: #831300;
+    border: none;
+    color: #ffffff;
+    font-size: 1.1vw;
+    font-weight: 850;
+    padding: 1.5% 3%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Esto quita la línea debajo del texto */
+    display: inline-block; /* Esto mantiene el comportamiento de bloque en línea */
+}
+
+.behance-button:hover {
+    background-color: #6B0000;
+}
+
+@media (max-width: 768px) {
+    .main-container-projects {
+        flex-direction: column-reverse;
+    }
+
+    .flex-column-afb, .flex-column {
+        width: 100%;
+    }
+
+    .projects {
+        font-size: 7vw;
+        margin-top: 20px;
+    }
+
+    .project-title {
+        font-size: 4vw;
+        margin-bottom: 2%;
+    }
+
+    .current-project-title {
+        font-size: 5vw;
+        margin-bottom: 3%;
+    }
+
+    .project-description {
+        font-size: 3vw;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .behance-button {
+        font-size: 3vw;
+        padding: 3% 6%;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        font-size: 8vw;
+    }
+
+    .project-title {
+        font-size: 3.5vw;
+    }
+
+    .current-project-title {
+        font-size: 4.5vw;
+    }
+
+    .project-description {
+        font-size: 3.5vw;
+    }
+
+    .behance-button {
+        font-size: 3.5vw;
+    }
+}
+
+

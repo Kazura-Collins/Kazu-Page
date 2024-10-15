@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita que el contenido se salga horizontalmente */
   }
 
   .header {
@@ -100,6 +100,7 @@
     overflow-x: hidden;
     width: 100%;
     box-sizing: border-box;
+    padding: 15px;
   }
 
   #about .rectangle,
@@ -117,7 +118,7 @@
 
   #about .kazura-collins {
     position: relative;
-    font-size: 8vw;
+    font-size: 36px;
     transform: none;
     margin-bottom: 20px;
     text-align: left;
@@ -131,7 +132,7 @@
 
   #about .span-isaac-montano {
     position: relative;
-    font-size: 6vw;
+    font-size: 28px;
     margin-bottom: 15px;
     text-align: left;
   }
@@ -139,7 +140,7 @@
   #about .span-info,
   #about .span-multimedia-design {
     position: relative;
-    font-size: 4vw;
+    font-size: 16px;
     margin-bottom: 10px;
     text-align: left;
   }
@@ -147,7 +148,7 @@
   #about .software-designer {
     position: relative;
     width: 100%;
-    font-size: 3.5vw;
+    font-size: 14px;
     margin-bottom: 20px;
     text-align: left;
   }
@@ -164,7 +165,7 @@
   #about .figma-expert,
   #about .html-css-js-expert {
     margin-left: 0;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
   }
 
@@ -187,9 +188,13 @@
 
   .experience-subtitle {
     font-size: 28px;
-    transform: none;
     text-align: center;
     margin-bottom: 15px;
+  }
+
+  .education .experience-subtitle,
+  .professional-experience .experience-subtitle {
+    transform: none;
   }
 
   .experience-box {
@@ -215,32 +220,169 @@
     flex: 1;
     width: 100%;
   }
+
+  /* Ocultar la versión de escritorio y mostrar la versión móvil */
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  /* Estilos para la sección about-mobile */
+  #about-mobile {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    min-height: 100vh; /* Asegura que la sección ocupe al menos toda la altura de la pantalla */
+  }
+
+  #about-mobile .stars-background {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200%;
+    background: url(/assets/images/littlesatr.png) repeat;
+    opacity: 0.5;
+    z-index: 0;
+    animation: rotating 120s linear infinite;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #about-mobile .main-container-about-mobile {
+    position: relative;
+    z-index: 1;
+  }
+
+  #about-mobile h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  #about-mobile h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  #about-mobile p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+  #about-mobile .skills {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  #about-mobile .skills h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .language-selector {
+    margin: 5px 0;
+  }
+
+  #languageSelector {
+    width: 100%;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  /* Estilo para las opciones del selector */
+  #languageSelector option {
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Elimina completamente la flecha personalizada en móviles */
+  .language-selector::after {
+    content: none;
+  }
+
+  /* Oculta la flecha nativa del selector en diferentes navegadores */
+  #languageSelector::-ms-expand {
+    display: none;
+  }
+
+  .experience-content {
+    flex-direction: column;
+  }
+
+  .professional-experience,
+  .education {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .experience-subtitle {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .experience-list li {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 480px) {
   .experience-title {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 15px;
   }
 
   .experience-subtitle {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 8px;
   }
 
   .experience-list li {
     font-size: 14px;
+    margin-bottom: 3px;
   }
 
   #about .kazura-collins {
-    font-size: 20px;
+    font-size: 26px;
+    margin-bottom: 10px;
   }
 
   #about .span-isaac-montano {
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 8px;
   }
 
   #about .span-info,
   #about .span-multimedia-design,
-  #about .software-designer,
+  #about .software-designer {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
   #about .languages,
   #about .software,
   #about .bilingual-common-languages,
@@ -248,7 +390,24 @@
   #about .adobe-expert,
   #about .figma-expert,
   #about .html-css-js-expert {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+}
+
+/* Ajustes para el texto y evitar que se corte en dispositivos móviles */
+.contenedor {
+    max-width: 100%; /* Asegúrate de que el contenedor no exceda el ancho de pantalla */
+    word-wrap: break-word; /* Ajusta el texto largo a la siguiente línea */
+    overflow-wrap: break-word; /* Asegura que las palabras largas también se ajusten */
+}
+
+@media (min-width: 769px) {
+  .desktop-only {
+    display: block;
   }
 
+  .mobile-only {
+    display: none;
+  }
 }

@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Este es el portafolio de Kazura Collins" />
+    <meta name="author" content="Kazura Collins" />
     <meta property="og:title" content="Kazura Collins Portfolio" />
     <meta property="og:description" content="Diseñador multimedia y desarrollador de software" />
     <meta property="og:url" content="https://kazura-collins.github.io/" />
     <title>Kazura Collins Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="about.css" />
@@ -24,11 +27,17 @@
         <div class="menu-toggle">☰</div>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#home" data-i18n="home">Home</a></li>
+            <li><a href="#about" data-i18n="about">About</a></li>
+            <li><a href="#experience" data-i18n="experience">Experience</a></li>
+            <li><a href="#projects" data-i18n="projects1">Projects</a></li>
+            <li><a href="#contact" data-i18n="contact">Contact me</a></li>
+            <li class="language-selector">
+              <select id="languageSelector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+              </select>
+            </li>
           </ul>
         </nav>
       </div>
@@ -41,32 +50,35 @@
           <img src="assets/images/portfolio.png" alt="Portfolio" class="portfolio-image">
           <div class="author-info">
             <h2 class="author-name">KAZURA COLLINS</h2>
-            <p class="author-subtitle">ISAAC MONTAÑO</p>
+            <p class="author-subtitle" data-i18n="authorSubtitle">ISAAC MONTAÑO</p>
           </div>
         </div>
       </section>
 
-      <!-- About Section -->
-      <section id="about" class="about-section">
+      <!-- About Section (versión de escritorio) -->
+      <section id="about" class="about-section desktop-only">
         <div class="main-container-about">
           <div class="rectangle"><div class="mask-group"></div></div>
           <div class="background">
             <span class="kazura-collins">Kazura Collins</span>
             <div class="circles"></div>
             <span class="span-2024">2024</span>
-            <span class="span-isaac-montano">Who's Isaac Montaño?</span>
+            <span class="span-isaac-montano" data-i18n="whoIsIsaac">Who's Isaac Montaño?</span>
             <span class="span-info">08/08/2003 · Colombian<br /></span>
-            <span class="span-multimedia-design">MULTIMEDIA DESIGNER · UX DESIGNER · VIDEO EDITOR</span>
-            <span class="software-designer">
+            <span class="span-multimedia-design" data-i18n="multimediaDesigner">MULTIMEDIA DESIGNER · UX DESIGNER · VIDEO EDITOR</span>
+            <span class="software-designer" data-i18n="softwareDesigner">
               I'm a software designer and developer focused on interactive applications. <br /><br />
               I specialize in innovative technological solutions that enhance the user experience, balancing functionality
               and aesthetics. I also manage projects with efficiency and attention to detail, adapting quickly to new tools.
             </span>
             <div class="group-left">
-              <span class="languages">LANGUAGES</span>
+              <span class="languages" data-i18n="languages">LANGUAGES</span>
               <div class="bilingual-common">
-                <span class="bilingual-common-languages">Bilingual / Common Languages:<br /></span>
-                <span class="native-language">(C2) Spanish - Native Language<br />(C1) English - Acquired Language</span>
+                <span class="bilingual-common-languages" data-i18n="bilingualCommon">Bilingual / Common Languages:</span>
+                <div class="language-list">
+                  <span data-i18n="nativeLanguage">(C2) Spanish - Native Language</span>
+                  <span data-i18n="acquiredLanguage">(C1) English - Acquired Language</span>
+                </div>
               </div>
               <span class="software">SOFTWARE</span>
               <span class="adobe-expert">Adobe Suite ................... Expert</span>
@@ -78,93 +90,114 @@
         </div>
       </section>
 
+      <!-- About Section (versión móvil) -->
+      <section id="about-mobile" class="about-section mobile-only">
+        <div class="stars-background"></div>
+        <div class="main-container-about-mobile">
+          <h2>Kazura Collins</h2>
+          <h3 data-i18n="whoIsIsaac">Who's Isaac Montaño?</h3>
+          <p>08/08/2003 · Colombian</p>
+          <p data-i18n="multimediaDesigner">MULTIMEDIA DESIGNER · UX DESIGNER · VIDEO EDITOR</p>
+          <p data-i18n="softwareDesigner">I'm a software designer and developer focused on interactive applications. I specialize in innovative technological solutions that enhance the user experience, balancing functionality and aesthetics. I also manage projects with efficiency and attention to detail, adapting quickly to new tools.</p>
+          
+          <div class="skills">
+            <h4 data-i18n="languages">LANGUAGES</h4>
+            <p data-i18n="nativeLanguage">(C2) Spanish - Native Language</p>
+            <p data-i18n="acquiredLanguage">(C1) English - Acquired Language</p>
+            
+            <h4>SOFTWARE</h4>
+            <p>Adobe Suite - Expert</p>
+            <p>Figma - Expert</p>
+            <p>HTML - CSS - JS - Expert</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Experience Section -->
       <section id="experience">
         <div class="experience-background"></div>
         <img src="assets/images/up.png" alt="Borde superior" class="experience-border top">
         <div class="exp-container main-container">
-          <h2 class="experience-title">Experience</h2>
+          <h2 class="experience-title" data-i18n="experienceTitle">Experience</h2>
           <div class="experience-content">
             <div class="professional-experience">
-              <h3 class="experience-subtitle">Professional Experience</h3>
+              <h3 class="experience-subtitle" data-i18n="professionalExperience">Professional Experience</h3>
               <ul class="experience-list">
-                <li>2020 - Present: Freelance Multimedia and Web Designer</li>
-                <li>2023: UX/UI Designer for Gases de Occidente, Cloudtrack</li>
-                <li>2023 - 2024: Brandmaking and Web Designer for Asocrea</li>
+                <li data-i18n="freelanceMultimedia">2020 - Present: Freelance Multimedia and Web Designer</li>
+                <li data-i18n="uxDesignerGDO">2023: UX/UI Designer for Gases de Occidente, Cloudtrack</li>
+                <li data-i18n="brandmakingAsocrea">2023 - 2024: Brandmaking and Web Designer for Asocrea</li>
               </ul>
             </div>
             <div class="education">
-              <h3 class="experience-subtitle">Education</h3>
+              <h3 class="experience-subtitle" data-i18n="education">Education</h3>
               <ul class="experience-list">
-                <li>2020 - 2025: Interactive Media Design, Universidad ICESI, Cali, Colombia</li>
-                <li>2007 - 2019: Bachelor at Colegio Andino, Cali, Colombia</li>
+                <li data-i18n="interactiveMediaDesign">2020 - 2025: Interactive Media Design, Universidad ICESI, Cali, Colombia</li>
+                <li data-i18n="bachelorAndino">2007 - 2019: Bachelor at Colegio Andino, Cali, Colombia</li>
               </ul>
             </div>
           </div>
-          <a href="#" class="cv-button">Check my CV</a>
+          <a href="assets/pdf/CV Isaac Montano.pdf" class="cv-button" target="_blank" rel="noopener noreferrer" data-i18n="checkCV">Check my CV</a>
         </div>
         <img src="assets/images/down.png" alt="Borde inferior" class="experience-border bottom">
       </section>
 
       <!-- Projects Section -->
       <section id="projects" class="projects-section">
-        <h2>PROJECTS</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <h3>CloudTrack-GDO</h3>
-            <div class="project-content">
-              <div class="project-image">
-                <img src="assets/images/CloudTrack.png" alt="CloudTrack-GDO">
-              </div>
-              <div class="project-description">
-                <p>CloudTrack es blablabla</p>
-                <a href="https://www.behance.net/gallery/200259979/CloudTrack-GDO" class="behance-link" target="_blank">Check it on Behance</a>
-              </div>
-            </div>
+        <div class="main-container-projects">
+          <div class="flex-column-afb">
+            <span class="projects">Projects</span>
+            <span class="project-title">CloudTrack - GDO</span>
+            <span class="project-title">Ritual of Madness</span>
+            <span class="project-title">Editorial Design</span>
+            <span class="project-title">Fitmate</span>
+            <span class="project-title">Signal Chase</span>
+            <span class="project-title">Intu Redesign</span>
+            <span class="project-title">Uruguay Branding</span>
           </div>
-          <!-- Puedes añadir más proyectos aquí siguiendo la misma estructura -->
+          <div class="flex-column">
+            <h3 class="current-project-title"></h3>
+            <div class="image"></div>
+            <span class="project-description">
+              Project description lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              <br /><br />Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+              lorem ipsum lorem ipsum lorem ipsum
+            </span>
+            <a href="#" class="behance-button" target="_blank">Ver en Behance</a>
+          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact-section">
-        <div class="container">
-          <h2>Contacto</h2>
-          <p>Envíame un email: <a href="mailto:kazura.icesi@gmail.com">kazura.icesi@gmail.com</a></p>
+        <div class="main-container-contact">
+          <h2 class="contact-title" data-i18n="contactTitle">Contact</h2>
+          <p class="contact-description" data-i18n="contactDescription">Interested in collaborating? Get in touch!</p>
+          <div class="contact-info">
+            <p><span data-i18n="sendEmail">Send me an email:</span> <a href="mailto:kazura.icesi@gmail.com">kazura.icesi@gmail.com</a></p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/tu-perfil" target="_blank" class="social-icon linkedin">
+              <img src="assets/images/linked.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com/tu-canal" target="_blank" class="social-icon youtube">
+              <img src="assets/images/yt.png" alt="YouTube">
+            </a>
+            <a href="https://www.behance.net/kazucollins" target="_blank" class="social-icon behance">
+              <img src="assets/images/behance.png" alt="Behance">
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Kazura Collins. Todos los derechos reservados.</p>
+      <p class="copyright">&copy; 2024 Kazura Collins. All rights reserved.</p>
     </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-        const navLinks = document.querySelectorAll('nav ul li a');
-
-        menuToggle.addEventListener('click', function() {
-          nav.classList.toggle('active');
-        });
-
-        navLinks.forEach(link => {
-          link.addEventListener('click', function() {
-            nav.classList.remove('active');
-          });
-        });
-
-        // Cerrar el menú si se hace clic fuera de él
-        document.addEventListener('click', function(event) {
-          const isClickInsideNav = nav.contains(event.target);
-          const isClickOnMenuToggle = menuToggle.contains(event.target);
-          
-          if (!isClickInsideNav && !isClickOnMenuToggle && nav.classList.contains('active')) {
-            nav.classList.remove('active');
-          }
-        });
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

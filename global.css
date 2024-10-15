@@ -66,3 +66,48 @@ body {
   }
   
 
+.language-selector {
+  position: relative;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+#languageSelector {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 30px 5px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#languageSelector:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#languageSelector:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.language-selector::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.menu-toggle {
+  display: none;
+}

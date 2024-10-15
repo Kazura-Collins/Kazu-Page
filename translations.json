@@ -1,0 +1,128 @@
+{
+  "en": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects1": "Projects",
+    "contact": "Contact me",
+    "authorSubtitle": "ISAAC MONTAÑO",
+    "whoIsIsaac": "Who's Isaac Montaño?",
+    "multimediaDesigner": "MULTIMEDIA DESIGNER · UX DESIGNER · VIDEO EDITOR",
+    "softwareDesigner": "I'm a software designer and developer focused on interactive applications. I specialize in innovative technological solutions that enhance the user experience, balancing functionality and aesthetics. I also manage projects with efficiency and attention to detail, adapting quickly to new tools.",
+    "languages": "LANGUAGES",
+    "bilingualCommon": "Bilingual / Common Languages:",
+    "nativeLanguage": "(C2) Spanish - Native Language",
+    "acquiredLanguage": "(C1) English - Acquired Language",
+    "software": "SOFTWARE",
+    "adobeExpert": "Adobe Suite ................... Expert",
+    "figmaExpert": "Figma ............................... Expert",
+    "htmlCssJsExpert": "HTML - CSS - JS ............ Expert",
+    "checkCV": "Check my CV",
+    "projectsTitle": "Projects",
+    "contactTitle": "Contact",
+    "contactDescription": "Interested in collaborating? Get in touch!",
+    "sendEmail": "Send me an email:",
+    "copyright": "All rights reserved.",
+    "experienceTitle": "Experience",
+    "professionalExperience": "Professional Experience",
+    "education": "Education",
+    "freelanceMultimedia": "2020 - Present: Freelance Multimedia and Web Designer",
+    "uxDesignerGDO": "2023: UX/UI Designer for Gases de Occidente, Cloudtrack",
+    "brandmakingAsocrea": "2023 - 2024: Brandmaking and Web Designer for Asocrea",
+    "interactiveMediaDesign": "2020 - 2025: Interactive Media Design, Universidad ICESI, Cali, Colombia",
+    "bachelorAndino": "2007 - 2019: Bachelor at Colegio Andino, Cali, Colombia",
+    "projects": {
+      "CloudTrack": {
+        "title": "CloudTrack - GDO",
+        "description": "CloudTrack is an innovative tracking platform developed for Gases de Occidente (GDO), designed to streamline the construction and implementation of gas infrastructure. This cutting-edge solution offers real-time monitoring and management of gas projects, enhancing efficiency and safety in the field. With its user-friendly interface and powerful analytics, CloudTrack revolutionizes how GDO oversees its operations, ensuring timely project completion and adherence to strict safety standards."
+      },
+      "RitualOfMadness": {
+        "title": "Ritual of Madness",
+        "description": "Ritual of Madness is an immersive card game that plunges players into a world of mystery and supernatural intrigue. Designed with a unique blend of strategy and chance, this game challenges players to navigate through dark rituals and ancient prophecies. With its stunning artwork and intricate gameplay mechanics, Ritual of Madness offers an unforgettable gaming experience that keeps players on the edge of their seats."
+      },
+      "EditorialDesign": {
+        "title": "Diseño Editorial",
+        "description": "Este proyecto de diseño editorial muestra una perfecta combinación de creatividad y funcionalidad. Elaborado con meticulosa atención al detalle, presenta diseños innovadores, tipografía y elementos visuales que mejoran la legibilidad y el compromiso. Desde maquetaciones de revistas hasta publicaciones digitales, este proyecto demuestra el poder del diseño efectivo para comunicar ideas complejas y cautivar audiencias a través de diversas plataformas."
+      },
+      "Fitmate": {
+        "title": "Fitmate",
+        "description": "Fitmate es una aplicación integral de fitness diseñada para revolucionar la salud y el bienestar personal. Esta plataforma fácil de usar ofrece planes de entrenamiento personalizados, seguimiento nutricional y monitoreo de progreso, todo adaptado a los objetivos y preferencias individuales. Con su interfaz intuitiva y características avanzadas como entrenamiento impulsado por IA y conectividad social, Fitmate permite a los usuarios alcanzar sus aspiraciones de fitness con facilidad y motivación."
+      },
+      "SignalChase": {
+        "title": "Signal Chase",
+        "description": "Signal Chase es una plataforma innovadora diseñada para hacer que el aprendizaje del código Morse sea atractivo y accesible. Esta aplicación interactiva ofrece un plan de estudios completo que abarca letras, números y palabras, complementado con ricas ayudas visuales. Los usuarios pueden personalizar su experiencia de aprendizaje seleccionando entre una variedad de sonidos de instrumentos para practicar el código Morse."
+      },
+      "IntuRedesign": {
+        "title": "Rediseño de Intu",
+        "description": "El proyecto de Rediseño de Accesibilidad de Intu se centra en transformar las interfaces digitales para garantizar la inclusividad para todos los usuarios. Esta revisión integral implementa las mejores prácticas en diseño accesible, incluyendo una mejor compatibilidad con lectores de pantalla, navegación por teclado y contraste de colores. Al priorizar la experiencia del usuario para personas con diversas capacidades, este rediseño no solo cumple con los estándares internacionales de accesibilidad, sino que también mejora la usabilidad para todos los usuarios, estableciendo un nuevo punto de referencia en el diseño digital inclusivo."
+      },
+      "UruguayBranding": {
+        "title": "Branding de Uruguay",
+        "description": "El proyecto de Branding de Uruguay es una iniciativa integral de identidad nacional destinada a mostrar la cultura única, la belleza natural y las oportunidades económicas del país. Esta estrategia de marca abarca un lenguaje visual coherente, un marco de mensajes y materiales promocionales que resaltan las fortalezas de Uruguay en turismo, comercio e innovación. El resultado es una representación poderosa y auténtica de la esencia de Uruguay en el escenario global."
+      }
+    }
+  },
+  "es": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects1": "Proyectos",
+    "contact": "Contáctame",
+    "authorSubtitle": "ISAAC MONTAÑO",
+    "whoIsIsaac": "¿Quién es Isaac Montaño?",
+    "multimediaDesigner": "DISEÑADOR MULTIMEDIA · DISEÑADOR UX · EDITOR DE VIDEO",
+    "softwareDesigner": "Soy un diseñador y desarrollador de software enfocado en aplicaciones interactivas. Me especializo en soluciones tecnológicas innovadoras que mejoran la experiencia del usuario, equilibrando funcionalidad y estética. También gestiono proyectos con eficiencia y atención al detalle, adaptándome rápidamente a nuevas herramientas.",
+    "languages": "IDIOMAS",
+    "bilingualCommon": "Bilingüe / Idiomas comunes:",
+    "nativeLanguage": "(C2) Español - Lengua materna",
+    "acquiredLanguage": "(C1) Inglés - Lengua adquirida",
+    "software": "SOFTWARE",
+    "adobeExpert": "Adobe Suite ................... Experto",
+    "figmaExpert": "Figma ............................... Experto",
+    "htmlCssJsExpert": "HTML - CSS - JS ............ Experto",
+    "checkCV": "Ver mi CV",
+    "projectsTitle": "Proyectos",
+    "contactTitle": "Contacto",
+    "contactDescription": "¿Interesado en colaborar? ¡Ponte en contacto!",
+    "sendEmail": "Envíame un correo electrónico:",
+    "copyright": "Todos los derechos reservados.",
+    "experienceTitle": "Experiencia",
+    "professionalExperience": "Experiencia Profesional",
+    "education": "Educación",
+    "freelanceMultimedia": "2020 - Presente: Diseñador Multimedia y Web Freelance",
+    "uxDesignerGDO": "2023: Diseñador UX/UI para Gases de Occidente, Cloudtrack",
+    "brandmakingAsocrea": "2023 - 2024: Diseñador de Marca y Web para Asocrea",
+    "interactiveMediaDesign": "2020 - 2025: Diseño de Medios Interactivos, Universidad ICESI, Cali, Colombia",
+    "bachelorAndino": "2007 - 2019: Bachillerato en Colegio Andino, Cali, Colombia",
+    "projects": {
+      "CloudTrack": {
+        "title": "CloudTrack - GDO",
+        "description": "CloudTrack es una plataforma de seguimiento innovadora desarrollada para Gases de Occidente (GDO), diseñada para agilizar la construcción e implementación de infraestructura de gas. Esta solución de vanguardia ofrece monitoreo y gestión en tiempo real de proyectos de gas, mejorando la eficiencia y seguridad en el campo. Con su interfaz fácil de usar y potentes análisis, CloudTrack revoluciona la forma en que GDO supervisa sus operaciones, asegurando la finalización oportuna de proyectos y el cumplimiento de estrictos estándares de seguridad."
+      },
+      "RitualOfMadness": {
+        "title": "Ritual of Madness",
+        "description": "Ritual of Madness es un juego de cartas inmersivo que sumerge a los jugadores en un mundo de misterio e intriga sobrenatural. Diseñado con una mezcla única de estrategia y azar, este juego desafía a los jugadores a navegar a través de rituales oscuros y profecías antiguas. Con su impresionante arte y complejos mecanismos de juego, Ritual of Madness ofrece una experiencia de juego inolvidable que mantiene a los jugadores al borde de sus asientos."
+      },
+      "EditorialDesign": {
+        "title": "Diseño Editorial",
+        "description": "Este proyecto de diseño editorial muestra una perfecta combinación de creatividad y funcionalidad. Elaborado con meticulosa atención al detalle, presenta diseños innovadores, tipografía y elementos visuales que mejoran la legibilidad y el compromiso. Desde maquetaciones de revistas hasta publicaciones digitales, este proyecto demuestra el poder del diseño efectivo para comunicar ideas complejas y cautivar audiencias a través de diversas plataformas."
+      },
+      "Fitmate": {
+        "title": "Fitmate",
+        "description": "Fitmate es una aplicación integral de fitness diseñada para revolucionar la salud y el bienestar personal. Esta plataforma fácil de usar ofrece planes de entrenamiento personalizados, seguimiento nutricional y monitoreo de progreso, todo adaptado a los objetivos y preferencias individuales. Con su interfaz intuitiva y características avanzadas como entrenamiento impulsado por IA y conectividad social, Fitmate permite a los usuarios alcanzar sus aspiraciones de fitness con facilidad y motivación."
+      },
+      "SignalChase": {
+        "title": "Signal Chase",
+        "description": "Signal Chase es una plataforma innovadora diseñada para hacer que el aprendizaje del código Morse sea atractivo y accesible. Esta aplicación interactiva ofrece un plan de estudios completo que abarca letras, números y palabras, complementado con ricas ayudas visuales. Los usuarios pueden personalizar su experiencia de aprendizaje seleccionando entre una variedad de sonidos de instrumentos para practicar el código Morse."
+      },
+      "IntuRedesign": {
+        "title": "Rediseño de Intu",
+        "description": "El proyecto de Rediseño de Accesibilidad de Intu se centra en transformar las interfaces digitales para garantizar la inclusividad para todos los usuarios. Esta revisión integral implementa las mejores prácticas en diseño accesible, incluyendo una mejor compatibilidad con lectores de pantalla, navegación por teclado y contraste de colores. Al priorizar la experiencia del usuario para personas con diversas capacidades, este rediseño no solo cumple con los estándares internacionales de accesibilidad, sino que también mejora la usabilidad para todos los usuarios, estableciendo un nuevo punto de referencia en el diseño digital inclusivo."
+      },
+      "UruguayBranding": {
+        "title": "Branding de Uruguay",
+        "description": "El proyecto de Branding de Uruguay es una iniciativa integral de identidad nacional destinada a mostrar la cultura única, la belleza natural y las oportunidades económicas del país. Esta estrategia de marca abarca un lenguaje visual coherente, un marco de mensajes y materiales promocionales que resaltan las fortalezas de Uruguay en turismo, comercio e innovación. El resultado es una representación poderosa y auténtica de la esencia de Uruguay en el escenario global."
+      }
+    }
+  }
+}
