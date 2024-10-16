@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="projects.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="modal.css" />
   </head>
   <body>
     <!-- Header -->
@@ -140,7 +141,7 @@
               </ul>
             </div>
           </div>
-          <a href="assets/pdf/CV-Isaac-Montano.pdf" class="cv-button" target="_blank" rel="noopener noreferrer" data-i18n="checkCV">Check my CV</a>
+          <button id="openCVButton" class="cv-button" data-i18n="checkCV">Check my CV</button>
         </div>
         <img src="assets/images/down.png" alt="Borde inferior" class="experience-border bottom">
       </section>
@@ -203,5 +204,16 @@
   </footer>
 
     <script src="main.js"></script>
+    <!-- Asegúrate de que este div esté presente al final del body -->
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 data-i18n="cvOptions">Opciones de CV</h2>
+        <div class="cv-buttons">
+          <a id="viewCV" href="" target="_blank" class="cv-button" data-i18n="viewCV">Ver CV</a>
+          <a id="downloadCV" href="" download class="cv-button" data-i18n="downloadCV">Descargar CV</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -185,4 +185,32 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('nav').classList.remove('active');
       }
     });
+
+    // Modal CV
+    const modal = document.getElementById("cvModal");
+    const btn = document.getElementById("openCVButton");
+    const span = document.querySelector("#cvModal .close");
+    const viewLink = document.getElementById("viewCV");
+    const downloadLink = document.getElementById("downloadCV");
+    const pdfPath = "assets/pdf/CV-Isaac-Montano.pdf";
+
+    if (btn && modal && span && viewLink && downloadLink) {
+      btn.onclick = function() {
+        viewLink.href = pdfPath;
+        downloadLink.href = pdfPath;
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    } else {
+      console.error("Uno o más elementos necesarios para el modal CV no fueron encontrados.");
+    }
   });

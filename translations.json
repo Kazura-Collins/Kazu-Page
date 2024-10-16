@@ -69,7 +69,10 @@
     "prototype3": "RidePal",
     "prototype4": "Intu Redesign",
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "cvOptions": "CV Options",
+    "viewCV": "View CV",
+    "downloadCV": "Download CV"
   },
   "es": {
     "home": "Inicio",
@@ -141,6 +144,9 @@
     "prototype3": "RidePal",
     "prototype4": "Rediseño de Intu",
     "previous": "Anterior",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "cvOptions": "Opciones de CV",
+    "viewCV": "Ver CV",
+    "downloadCV": "Descargar CV"
   }
 }
