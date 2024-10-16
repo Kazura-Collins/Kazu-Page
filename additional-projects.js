@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Función para verificar el tamaño de la pantalla y redirigir si es necesario
+    function checkScreenSizeAndRedirect() {
+        if (window.innerWidth <= 768) {
+            window.location.href = 'index.html';
+            return;
+        }
+    }
+
+    // Ejecutar la verificación al cargar la página
+    checkScreenSizeAndRedirect();
+
+    // Agregar un listener para el evento 'resize'
+    window.addEventListener('resize', checkScreenSizeAndRedirect);
+
     // Datos de ejemplo para los carruseles
     const models3D = [
         { type: 'video', src: 'assets/Additional/ave.mp4', alt: '3D Model Thraupis Palmerum' },

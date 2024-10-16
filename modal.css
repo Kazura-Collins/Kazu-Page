@@ -12,11 +12,11 @@
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 300px;
-  text-align: center;
+  width: 80%;
+  max-width: 800px;
 }
 
 .close {
@@ -60,16 +60,21 @@
   margin-top: 20px;
 }
 
-.cv-button {
-  display: inline-block;
+.cv-button,
+.pdf-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
   padding: 10px 20px;
   background-color: #8B0000;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  text-align: center;
   transition: background-color 0.3s;
 }
 
-.cv-button:hover {
+.cv-button:hover,
+.pdf-button:hover {
   background-color: #6d0000;
 }

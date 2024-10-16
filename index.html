@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="modal.css" />
+    <script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -35,7 +36,7 @@
             <li><a href="#about" data-i18n="about">About</a></li>
             <li><a href="#experience" data-i18n="experience">Experience</a></li>
             <li><a href="#projects" data-i18n="projects1">Projects</a></li>
-            <li><a href="additional-projects.html" data-i18n="additionalProjects1">Additional Projects</a></li>
+            <li class="hide-on-mobile"><a href="additional-projects.html" data-i18n="additionalProjects1">Additional Projects</a></li>
             <li><a href="#contact" data-i18n="contact">Contact me</a></li>
             <li class="language-selector">
               <select id="languageSelector">
@@ -203,17 +204,15 @@
       <p class="copyright">&copy; 2024 Kazura Collins. <span data-i18n="copyright">All rights reserved.</span></p>
   </footer>
 
-    <script src="main.js"></script>
-    <!-- Asegúrate de que este div esté presente al final del body -->
+
     <div id="cvModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2 data-i18n="cvOptions">Opciones de CV</h2>
-        <div class="cv-buttons">
-          <a id="viewCV" href="" target="_blank" class="cv-button" data-i18n="viewCV">Ver CV</a>
-          <a id="downloadCV" href="" download class="cv-button" data-i18n="downloadCV">Descargar CV</a>
-        </div>
+        <img id="cvImage" src="assets/images/CV-Isaac-Montano.png" alt="CV de Isaac Montaño" style="width:100%;">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:8971f71d-700c-4a9d-a979-de96244227fd" target="_blank" class="pdf-button" data-i18n="checkPDF">Check PDF</a>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

@@ -186,31 +186,72 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Modal CV
-    const modal = document.getElementById("cvModal");
-    const btn = document.getElementById("openCVButton");
-    const span = document.querySelector("#cvModal .close");
-    const viewLink = document.getElementById("viewCV");
-    const downloadLink = document.getElementById("downloadCV");
-    const pdfPath = "assets/pdf/CV-Isaac-Montano.pdf";
+    // Funcionalidad para el botón de CV
+const openCVButton = document.getElementById('openCVButton');
+const modal = document.getElementById('cvModal');
+const closeButton = modal.querySelector('.close');
 
-    if (btn && modal && span && viewLink && downloadLink) {
-      btn.onclick = function() {
-        viewLink.href = pdfPath;
-        downloadLink.href = pdfPath;
-        modal.style.display = "block";
-      }
+openCVButton.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
 
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
+closeButton.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
 
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    } else {
-      console.error("Uno o más elementos necesarios para el modal CV no fueron encontrados.");
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+// Declarar las variables al inicio del archivo, fuera de cualquier función
+let languageSelector, cvImage;
+
+function initializeCVElements() {
+  if (!languageSelector) languageSelector = document.getElementById('languageSelector');
+  if (!cvImage) cvImage = document.getElementById('cvImage');
+}
+
+function updateCVImage(language) {
+  initializeCVElements();
+  if (language === 'es') {
+    cvImage.src = 'assets/images/CV-Isaac-Montaño.png';
+  } else {
+    cvImage.src = 'assets/images/CV-Isaac-Montano.png'; // Asegúrate de que este archivo exista
+  }
+}
+
+
+    initializeCVElements();
+
+    if (languageSelector) {
+      languageSelector.addEventListener('change', function() {
+        updateCVImage(this.value);
+      });
     }
-  });
+
+    if (openCVButton) {
+      openCVButton.addEventListener('click', function() {
+        updateCVImage(languageSelector.value);
+        modal.style.display = 'block';
+      });
+    }
+
+    if (closeButton) {
+      closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+    }
+
+    window.addEventListener('click', function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    // Actualiza la imagen del CV al cargar la página
+    updateCVImage(languageSelector ? languageSelector.value : 'en');
+
+    // ... resto del código existente ...
+});
